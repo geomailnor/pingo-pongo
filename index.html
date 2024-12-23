@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tenis</title>
+    <link rel="icon" type="image/x-icon" href="img/ping.ico">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div id="cont">
+        <h1>Да поиграем на „Пинг-Понг“</h1>
+        <h3 class="myH3">Управление - с мишката.</h3>
+        <h3 class="myH3" id="vtoriH3">Паузиране на играта - с бутон 'пауза'</h3>
+        <div>
+            
+            <input type="radio" id="easy" name="trudnost" checked>
+            <label for="easy">лесно</label><br>
+            <input type="radio" id="medium" name="trudnost">
+            <label for="medium">средно</label><br>
+            <input type="radio" id="hard" name="trudnost">
+            <label for="hard">трудно</label>
+        </div>      
+        
+        <button id="button" type="button">Start Game</button>
+    
+    </div>
+
+    <div id="divkanava">
+        <canvas id="canvas" width="600" height="400" style="display: none"></canvas>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
